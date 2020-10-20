@@ -71,8 +71,13 @@
       }
 
       /*EX9 */
-      body:last-child p:last-of-type a {
-        background-color: #a3c1ad;
+      body > :not(div) p:last-of-type a {
+        background-color: red;
+      }
+
+      /*EX10 */
+      footer {
+        color: blueviolet;
       }
     </style>
     <meta charset="utf-8" />
