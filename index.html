@@ -506,6 +506,24 @@
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
+
+      /*EX11 */
+      let h1 = document.querySelector("h1");
+      h1.addEventListener("click", function () {
+        let navbar = document.querySelector("nav");
+        let newLink = document.createElement("a");
+        newLink.classList.add("p-2", "text-muted");
+        newLink.innerText = "New-Link";
+        navbar.appendChild(newLink);
+      });
+
+      /*EX12 */
+      let searchIcon = document.querySelector(
+        "header > div > :last-child :first-child"
+      );
+      searchIcon.addEventListener("click", function () {
+        searchIcon.innerHTML = "";
+      });
     </script>
   </body>
 </html>
