@@ -526,12 +526,21 @@
       });
 
       /*EX13 */
-      let jumbotron = document.querySelector(".jumbotron");
-      jumbotron.addEventListener("click", function () {
+      let jumbotronSelector = document.querySelector(".jumbotron p a");
+      jumbotronSelector.addEventListener("click", function () {
+        let jumbotron = document.querySelector(".jumbotron");
         jumbotron.classList.remove("bg-dark");
         jumbotron.style.backgroundImage = "url('img/ckRWplr.jpg')";
         jumbotron.style.backgroundSize = "cover";
         jumbotron.style.backgroundPosition = "center";
+      });
+
+      /*EX 14*/
+      let maybeTitle = document.querySelector("header a.blog-header-logo");
+      maybeTitle.addEventListener("click", function () {
+        maybeTitle.classList.remove("text-dark");
+        maybeTitle.style.color = "#ffe5b4";
+        h1.style.color = "#ffe5b4";
       });
     </script>
   </body>
