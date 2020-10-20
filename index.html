@@ -600,6 +600,14 @@
         let blogPosts = document.querySelectorAll(".blog-post");
         blogPosts[blogPosts.length - 1].innerHTML = "";
       });
+
+      /*EX20 */
+      let authors = document.querySelectorAll(".blog-post p:first-of-type a");
+      for (let i = 0; i < authors.length; i++) {
+        authors[i].addEventListener("mouseover", function () {
+          alert(authors[i].innerText);
+        });
+      }
     </script>
   </body>
 </html>
