@@ -592,6 +592,14 @@
         newBlog.appendChild(newText);
         blogMain.insertBefore(newBlog, pagination);
       });
+
+      /*EX19 */
+      let olderButton = document.querySelector(".blog-pagination :first-child");
+      olderButton.removeAttribute("href");
+      olderButton.addEventListener("click", function () {
+        let blogPosts = document.querySelectorAll(".blog-post");
+        blogPosts[blogPosts.length - 1].innerHTML = "";
+      });
     </script>
   </body>
 </html>
