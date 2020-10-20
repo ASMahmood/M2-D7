@@ -524,6 +524,15 @@
       searchIcon.addEventListener("click", function () {
         searchIcon.innerHTML = "";
       });
+
+      /*EX13 */
+      let jumbotron = document.querySelector(".jumbotron");
+      jumbotron.addEventListener("click", function () {
+        jumbotron.classList.remove("bg-dark");
+        jumbotron.style.backgroundImage = "url('img/ckRWplr.jpg')";
+        jumbotron.style.backgroundSize = "cover";
+        jumbotron.style.backgroundPosition = "center";
+      });
     </script>
   </body>
 </html>
