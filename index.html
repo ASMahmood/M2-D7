@@ -552,6 +552,13 @@
           postCards[i].classList.add("col-md-12");
         }
       });
+
+      /*EX16 */
+      let elsewhere = document.querySelector("aside :last-child h4");
+      elsewhere.addEventListener("click", function () {
+        let elsewhereList = document.querySelector("aside :last-child ol");
+        elsewhereList.innerHTML = "";
+      });
     </script>
   </body>
 </html>
