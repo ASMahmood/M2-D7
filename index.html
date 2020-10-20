@@ -572,6 +572,26 @@
           targetParas[i].innerText = newPara;
         }
       });
+
+      /*EX18 */
+      let newerButton = document.querySelector(".blog-pagination :last-child");
+      newerButton.classList.remove("disabled");
+      newerButton.removeAttribute("href");
+      let blogMain = document.querySelector(".blog-main");
+      newerButton.addEventListener("click", function () {
+        let pagination = document.querySelector(".blog-pagination");
+        let newBlog = document.createElement("div");
+        newBlog.classList.add("blog-post");
+        let newTitle = document.createElement("h2");
+        newTitle.classList.add("blog-post-title");
+        newTitle.innerText = "JS Created blog post";
+        let newText = document.createElement("p");
+        newText.innerText =
+          "Somebody once told me the world is gonna roll me I ain't the sharpest tool in the shed She was looking kind of dumb with her finger and her thumb In the shape of an 'L' on her forehead";
+        newBlog.appendChild(newTitle);
+        newBlog.appendChild(newText);
+        blogMain.insertBefore(newBlog, pagination);
+      });
     </script>
   </body>
 </html>
